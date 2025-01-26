@@ -21,8 +21,11 @@ function addnote(){
 
   container.appendChild(div)
 
-  btnremove = document.querySelector('.btnremove');
-  btnremove.addEventListener('click',removenote)
+  let btnremove = document.querySelectorAll('.btnremove');
+  // btnremove.addEventListener('click',removenote)
+ btnremove.forEach(btn=>{
+  btn.addEventListener('click',removenote)
+ })
 
 }
 
